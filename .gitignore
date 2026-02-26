@@ -1,0 +1,6 @@
+.env
+.venv
+__pycache__
+.adk
+reddit_events.db
+tmp

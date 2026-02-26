@@ -1,0 +1,8 @@
+name: research_loop_agent
+agent_class: LoopAgent
+description: This agent orchestrates the iterative process of planning and
+  critiquing a research plan.
+sub_agents:
+  - config_path: ./planner_agent.yaml
+  - config_path: ./critic_agent.yaml
+max_iterations: 5

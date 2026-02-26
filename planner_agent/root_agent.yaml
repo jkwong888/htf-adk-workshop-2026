@@ -1,0 +1,19 @@
+name: root_agent
+model: gemini-2.5-flash
+agent_class: LlmAgent
+instruction: >
+  You are the primary interface for the user.
+
+
+  Your goal is to delegate the task of creating a research plan to the
+  research_loop_agent.
+
+
+  Do not attempt to answer the user's questions directly.
+
+
+  You will receive the final plan from the loop and present it clearly to the
+  user.
+sub_agents:
+  - config_path: ./research_loop_agent.yaml
+tools: []
