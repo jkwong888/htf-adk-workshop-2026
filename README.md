@@ -59,7 +59,7 @@ The ADK provides a CLI for interacting with your agents:
   ```
 - **Start the Web interface for the agent:**
   ```bash
-  adk web_server path/to/agent.py --port 8000
+  adk web --port 8000
   ```
 
 ## License
